@@ -37,3 +37,42 @@ loginForm.addEventListener('submit', function(e) {
     //     console.error('Error:', error);
     // });
 });
+
+
+// add to cart
+// Define an array to store cart items
+let cart = [];
+
+// Function to handle adding items to the cart
+function addToCart(productName, price) {
+    // Add the item to the cart array
+    cart.push({ name: productName, price: price });
+    
+    // Update the cart icon or display
+    updateCartIcon();
+    
+    // You can also provide feedback to the user, for example:
+    alert('Item added to cart!');
+}
+
+// Function to update the cart icon or display
+function updateCartIcon() {
+    // Get the cart icon element and update its content
+    let cartIcon = document.getElementById('cart-icon');
+    cartIcon.innerText = `Cart (${cart.length})`;
+}
+
+// Add event listeners to all "Add to Cart" buttons
+document.querySelectorAll('.btn-add-to-cart').forEach(button => {
+    button.addEventListener('click', function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+        
+        // Retrieve product details from the button's attributes or nearby elements
+        let productName = this.dataset.productName;
+        let price = parseFloat(this.dataset.price);
+        
+        // Call the addToCart function with the product details
+        addToCart(productName, price);
+    });
+});
