@@ -8,30 +8,49 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <section>
-        <nav>
-            <div class="logo">
-                <h1>Boot Hous<span>e</span></h1>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <h1>Boot House<span>e</span></h1>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Services">Services</a>
+                    </li>
+                </ul>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-cart-shopping"></i>
+                    <i class="fas fa-user"></i>
+                </div>
             </div>
-
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Products">Products</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Review">Review</a></li>
-                <li><a href="#Servises">Servises</a></li>
-            </ul>
-
-            <div class="icons">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
-            </div>
-
         </nav>
+        <!-- navbar ends -->
+        
 
         <div class="main" id="Home">
             <div class="main_content">
